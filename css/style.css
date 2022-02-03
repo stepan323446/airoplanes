@@ -3,6 +3,10 @@
     --standart-color: #C10C99;
     --hover-color: #e213b5;
 }
+html
+{
+    height: 100%;
+}
 
 *
 {
@@ -12,6 +16,7 @@ body
 {
     position: relative;
     background: #050214;
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
@@ -103,10 +108,10 @@ a:hover
 .info
 {
     width: 40%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 .info-form
 {

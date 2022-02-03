@@ -1,6 +1,6 @@
 @media only screen and (max-width: 950px) {
 
-    .logo
+    body > header
     {
         display: none;
     }
@@ -16,4 +16,10 @@
     {
         display: none;
     }   
+
+    .password-properties a
+    {
+        color: #4D4D4D;
+    }
+    
 }
