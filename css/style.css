@@ -80,6 +80,24 @@ a:hover
     height: 100%;
     opacity: 0.54;
 }
+#video-play
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(204, 204, 204, 0.54);
+    width: 86px;
+    height: 86px;
+    border: 0;
+    border-radius: 100%;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Block with form and other info */
 .info
@@ -94,7 +112,7 @@ a:hover
 {
     width: 100%;
     max-width: 435px;
-    padding: 5px 6px;
+    padding: 5px 15px;
 }
 .info-form h1
 {
@@ -182,6 +200,16 @@ input:not([type="checkbox"]):focus
     background-image: url(../images/padlock.svg);
     top: 5px;
 }
+.input-hide button
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+}
 .last
 {
     margin-bottom: 17px;
@@ -231,7 +259,7 @@ input[type="checkbox"]::after
 }
 
 
-button
+.btn
 {
     padding: 14px 10px;
     background-color: var(--standart-color);
@@ -244,7 +272,7 @@ button
     cursor: pointer;
     transition: 0.2s ease;
 }
-button:hover
+.btn:hover
 {
     background-color: var(--hover-color);
 }

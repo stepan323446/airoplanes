@@ -24,6 +24,9 @@
         <aside class="video">
             <div class="thumbnail">
                 <div class="thumbnail-filter"></div>
+                <button type="button" id="video-play">
+                    <img src="images/play.svg" alt="">
+                </button>
             </div>
         </aside>
 
@@ -50,8 +53,11 @@
                     </div>
 
                     <label for="email">Password</label>
-                    <div class="input-inner last" id="input-password">
+                    <div class="input-inner input-hide last" id="input-password">
                         <input type="password" id="password" placeholder="Enter your Password">
+                        <button type="button">
+                            <img src="images/hide.svg" alt="">
+                        </button>
                     </div>
 
                     <div class="password-properties">
@@ -62,7 +68,7 @@
                         <a href="#">Forgot Password ?</a>
                     </div>
 
-                    <button type="submit">Login</button>
+                    <button class="btn" type="submit">Login</button>
                 </form>
                 <div class="or">
                     <div class="text">or continue with</div>
