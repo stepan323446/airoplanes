@@ -3,11 +3,6 @@
     --standart-color: #C10C99;
     --hover-color: #e213b5;
 }
-html
-{
-    height: 100%;
-}
-
 *
 {
     box-sizing: border-box;
