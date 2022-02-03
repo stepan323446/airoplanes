@@ -6,7 +6,8 @@
 
 *
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body
 {
@@ -37,6 +38,8 @@ a
     font-weight: 600;
     text-decoration: none;
     color: #b8159b;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 a:hover
@@ -52,6 +55,8 @@ a:hover
     position: relative;
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -88,7 +93,9 @@ a:hover
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background: rgba(204, 204, 204, 0.54);
     width: 86px;
     height: 86px;
@@ -97,9 +104,17 @@ a:hover
 
     cursor: pointer;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 /* Block with form and other info */
@@ -145,8 +160,13 @@ a:hover
 /* Form for Log in */
 form
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 52px;
 }
 label
@@ -171,7 +191,33 @@ input:not([type="checkbox"])
     font-size: 16;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
     transition: 0.2s ease-in;
+}
+input:not([type="checkbox"])::-webkit-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"])::-moz-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"]):-ms-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+input:not([type="checkbox"])::-ms-input-placeholder
+{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
 }
 input:not([type="checkbox"])::placeholder
 {
@@ -189,6 +235,8 @@ input:not([type="checkbox"]):focus
 {
     position: relative;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 49px;
 }
@@ -220,7 +268,9 @@ input:not([type="checkbox"]):focus
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     cursor: pointer;
     background: transparent;
     border: 0;
@@ -233,8 +283,12 @@ input:not([type="checkbox"]):focus
 /* under inputs */
 .password-properties
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 70px;
 }
 .password-properties *
@@ -249,7 +303,9 @@ input:not([type="checkbox"]):focus
 /* checkbox */
 input[type="checkbox"]
 {
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     width: 15px;
     height: 15px;
     background-color: #fff;
@@ -257,9 +313,16 @@ input[type="checkbox"]
 
     cursor: pointer;
 
+    display: -webkit-inline-box;
+
+    display: -ms-inline-flexbox;
+
     display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 input[type="checkbox"]:checked
 {
@@ -285,6 +348,8 @@ input[type="checkbox"]::after
     color: #fff;
     font-size: 17px;
     cursor: pointer;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
 }
 .btn:hover
@@ -312,8 +377,12 @@ input[type="checkbox"]::after
 .or .links
 {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .or .links a:last-child
 {
