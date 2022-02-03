@@ -16,6 +16,8 @@ body
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
+
+
 body > header
 {
     position: absolute;
@@ -104,15 +106,23 @@ a:hover
 .info
 {
     width: 40%;
-    display: flex;
     overflow: auto;
+}
+.info::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+.info::-webkit-scrollbar-thumb {
+    background-color: var(--standart-color);
+    outline: 0;
 }
 .info-form
 {
     width: 100%;
     max-width: 435px;
-    padding: 10px 15px;
-    margin: auto;
+    padding: 0 15px 25px 15px;
+    margin: 0 auto;
+    margin-top: 132px;
 }
 .info-form h1
 {
