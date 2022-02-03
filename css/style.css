@@ -27,7 +27,7 @@ body > header
     padding-left: 42px;
     padding-top: 31px;
 }
-h1
+h2
 {
     font-weight: 500;
     font-size: 30px;
@@ -139,7 +139,7 @@ a:hover
     margin: 0 auto;
     margin-top: 132px;
 }
-.info-form h1
+.info-form h2
 {
     margin-bottom: 22px;
 }
@@ -188,7 +188,7 @@ input:not([type="checkbox"])
     
 
     font-weight: 400;
-    font-size: 16;
+    font-size: 16px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     -webkit-transition: 0.2s ease-in;
@@ -253,7 +253,8 @@ input:not([type="checkbox"]):focus
     background-image: url(../images/mail.svg);
     top: 10px;
 }
-#input-password::before
+#input-password::before,
+#input-repeat-password::before
 {
     background-image: url(../images/padlock.svg);
     top: 5px;
@@ -344,7 +345,7 @@ input[type="checkbox"]::after
     border: 0;
     border-radius: 50px;
 
-    width: 500;
+    width: 500px;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
