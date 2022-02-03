@@ -133,7 +133,7 @@ a:hover
 }
 
 /* Form for Log in */
-#log-in
+form
 {
     display: flex;
     flex-direction: column;
@@ -180,7 +180,7 @@ input:not([type="checkbox"]):focus
     position: relative;
     width: 100%;
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
 }
 .input-inner::before
 {
@@ -200,6 +200,11 @@ input:not([type="checkbox"]):focus
     background-image: url(../images/padlock.svg);
     top: 5px;
 }
+#input-user::before
+{
+    background-image: url(../images/user.svg);
+    top: 7px;
+}
 .input-hide button
 {
     position: absolute;
@@ -210,7 +215,7 @@ input:not([type="checkbox"]):focus
     background: transparent;
     border: 0;
 }
-.last
+#log-in .last
 {
     margin-bottom: 17px;
 }
@@ -303,4 +308,10 @@ input[type="checkbox"]::after
 .or .links a:last-child
 {
     margin-right: 0;
+}
+
+/* register change */
+#register .input-inner
+{
+    margin-bottom: 57px;
 }
