@@ -345,7 +345,6 @@ input[type="checkbox"]::after
     border: 0;
     border-radius: 50px;
 
-    width: 500px;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
